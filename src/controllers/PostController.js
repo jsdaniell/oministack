@@ -5,6 +5,6 @@ module.exports = {
 
     },
     async store(req, res) {
-        
+        // Post Controller Stops on OminiStack video here!
     }
 }
