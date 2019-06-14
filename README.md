@@ -31,3 +31,31 @@ A instalação do gerenciador de pacotes Yarn também é feita por linha de coma
 Para criação e execução do servidor foi utilizado o framework Express.js, no qual abstrai grande parte da complexidade do que seria necessário utilizando apenas Node.js dando mais produtividade ao desenvolvimento e deixando que o foco fique direcionado mais a lógica de negócio da aplicação.
 
 [Alguns insights meus sobre o Express.js](https://jsdaniell.gitbook.io/source-code/nodejs/expressjs)
+
+### Mongoose
+
+Mongoose foi o módulo utilizado para modelagem e manipulação do banco de dados não relacional e seus respectivos dados. Abaixo segue um exemplo de Schema criado para utilização na aplicação:
+
+ Abaixo tem um dos exemplos de Schema implementados para uso no servidor.
+
+```javascript
+const PostSchema = new mongoose.Schema({
+    author: String,
+    place: String,
+    description: String,
+    hashtags: String,
+    image: String,
+    likes: {
+        type: Number,
+        default: 0,
+    }
+}, {
+    timestamps: true,
+})
+```
+
+### Insomnia
+
+Para testar e observas as requisições e respostas que transitam na aplicação, visto que por padrão, não é possível receber requisições POST no navegador.
+
+[Site oficial](https://insomnia.rest)
