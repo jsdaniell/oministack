@@ -4,4 +4,7 @@ Repositório referente a utilização da stack MERN (MongoDB, Express, React, No
 
 # Roadmap
 
-Roadmap é uma forma pessoal que criei para alguns repositórios meus, para mapear as ferramentas e implementações utilizadas durante o processo do projeto, aproveitei que já havia uma estipulação de templo de conclusão da semana oministack para aplicar o roadmap ao projeto.
+Roadmap é uma forma pessoal que criei para alguns repositórios meus, para mapear as ferramentas e implementações utilizadas durante o processo do projeto, aproveitei que já havia uma estipulação de templo de conclusão da semana oministack para aplicar o roadmap ao projeto. Aproveitei pra me aprofundar em algumas ferramentas utilizadas na aplicação e descrevi parte desse aprofundamento nos tópicos abaixo.
+
+
+## Ambiente de Desenvolvimento (Day One) 
