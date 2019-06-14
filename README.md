@@ -6,7 +6,7 @@ Repositório referente a utilização da stack MERN (MongoDB, Express, React, No
 
 Os recursos utilizados no ambiente de desenvolvimento envolvem o Node.js (servidor) e o gerenciador de pacotes Yarn, alternativa ao npm que oferece algumas vantagens, como armazenamento em cache de registros dos pacotes instalados, permitindo por exemplo que a instalação dos pacotes em máquinas terceiras aconteçam na mesma ordem que o projeto original.
 
-[Mais informações sobre o Node.js](https://jsdaniell.gitbook.io/source-code/nodejs)
+[Alguns insights meus sobre o Node.js](https://jsdaniell.gitbook.io/source-code/nodejs)
 
 ### Instalação Node.js via nvm
 
@@ -30,4 +30,4 @@ A instalação do gerenciador de pacotes Yarn também é feita por linha de coma
 
 Para criação e execução do servidor foi utilizado o framework Express.js, no qual abstrai grande parte da complexidade do que seria necessário utilizando apenas Node.js dando mais produtividade ao desenvolvimento e deixando que o foco fique direcionado mais a lógica de negócio da aplicação.
 
-[Mais informações sobre o Express.js](https://jsdaniell.gitbook.io/source-code/nodejs/expressjs)
+[Alguns insights meus sobre o Express.js](https://jsdaniell.gitbook.io/source-code/nodejs/expressjs)
