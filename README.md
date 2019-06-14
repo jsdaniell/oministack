@@ -24,7 +24,7 @@ A instalação do gerenciador de pacotes Yarn também é feita por linha de coma
 
 [Instalação Yarn](https://yarnpkg.com/en/docs/install)
 
-## Criando a Base da Aplicação
+## Base da Aplicação
 
 ### Express.js
 
