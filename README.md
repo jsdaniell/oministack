@@ -102,3 +102,73 @@ Basicamente um objeto composto por configurações de manipulação está sendo 
 
 > O terceito paramêtro invoca o método `PostController.store` que se encontra no arquivo `PostController.js` na qual será efetuado o tratamento dos dados do corpo da requisição.
 
+## Sharp
+
+Sharp é um módulo para manipulação de imagens, no projeto, foi utilizado para redimensionar as imagens enviadas para a aplicação. Abaixo a implementação do uso do sharp.
+
+```javascript
+    async store(req, res) {
+        const { author, place, description, hashtags } = req.body;
+        const { filename: image } = req.file;
+
+        const [name] = image.split('.');
+        const fileName = `${name}.jpg`;
+
+        await sharp(req.file.path)
+        .resize(500)
+        .jpeg({ quality: 70})
+        .toFile(
+            path.resolve(req.file.destination, 'resized', fileName)
+        )
+
+        fs.unlinkSync(req.file.path);
+        
+        const post = await Post.create({
+            author,
+            place,
+            description,
+            hashtags,
+            image: fileName,
+        });
+        
+        return res.json(post);
+    }
+```
+
+## Cors
+
+O módulo Cors permite que a aplicação no front-end tenha acesso ao servidor back-end mesmo estando em domínios diferentes, a implementação do módulo foi efetuada apenas com o comando a seguinte linha no index da aplicação:
+
+```javascript
+app.use(cors());
+```
+
+## Socket.io
+
+Foi utilizado para que a aplicação suportasse tanto o protocolo HTTP como o protocolo Web Socket, para que o suporte aos dois protocolos funcione, foi necessária a seguinte implementação no index da aplicação:
+
+```javascript
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
+
+const port = 3333;
+
+app.use(require('./routes'));
+
+server.listen(port);
+```
+
+### Disponibilizando a variável globalmente
+
+Para que as requisições e respostas aconteçam via protocolo Web Socket, foi necessário a disponibilização da variável `io` em toda parte (arquivos) da aplicação, para deixar essa variável globalmente disponível foi criado um middleware contendo ela como requisição no index da aplicação:
+
+```javascript
+app.use((req, res, next) => {
+    req.io = io;
+
+    next();
+})
+```
+
+
+
