@@ -158,7 +158,7 @@ app.use(require('./routes'));
 server.listen(port);
 ```
 
-### Disponibilizando a variável globalmente
+### Disponibilizando o acesso globalmente
 
 Para que as requisições e respostas aconteçam via protocolo Web Socket, foi necessário a disponibilização da variável `io` em toda parte (arquivos) da aplicação, para deixar essa variável globalmente disponível foi criado um middleware contendo ela como requisição no index da aplicação:
 
