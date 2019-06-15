@@ -3,7 +3,9 @@
 Repositório referente a utilização da stack MERN (MongoDB, Express, React, Node) feita durante a semana OminiStack promovida pela Rocketseat, o projeto envolve a criação de uma aplicação réplica ao Instagram, onde foram utilizados todos os elementos da stack, inclusive ainda ReactNative para criação da versão mobile da aplicação, visto que o consumo da API REST feita com Express.js em ambiente Node.js, é compartilhada entre a aplicação web e mobile.
 
 - [Semana OminiStack](#semana-oministack)
-- [Implementação do Back-end](#implementa%C3%A7%C3%A3o-do-back-end)
+<details>
+- [Semana OminiStack](#semana-oministack)
+<summary>- [Implementação do Back-end](#implementa%C3%A7%C3%A3o-do-back-end)</summary>
   - [Dependências](#depend%C3%AAncias)
     - [Instalação Node.js via nvm](#instala%C3%A7%C3%A3o-nodejs-via-nvm)
     - [Instalação Yarn (Gerenciador de Pacotes)](#instala%C3%A7%C3%A3o-yarn-gerenciador-de-pacotes)
@@ -15,6 +17,7 @@ Repositório referente a utilização da stack MERN (MongoDB, Express, React, No
     - [Sharp](#sharp)
     - [Cors](#cors)
     - [Socket.io](#socketio)
+</details>
 
 # Implementação do Back-end
 
