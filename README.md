@@ -2,7 +2,36 @@
 
 Repositório referente a utilização da stack MERN (MongoDB, Express, React, Node) feita durante a semana OminiStack promovida pela Rocketseat, o projeto envolve a criação de uma aplicação réplica ao Instagram, onde foram utilizados todos os elementos da stack, inclusive ainda ReactNative para criação da versão mobile da aplicação, visto que o consumo da API REST feita com Express.js em ambiente Node.js, é compartilhada entre a aplicação web e mobile.
 
+- [Semana OminiStack](#semana-oministack)
+- [Ambiente de Desenvolvimento](#ambiente-de-desenvolvimento)
+  - [Dependências](#depend%C3%AAncias)
+  - [Instalação Node.js via nvm](#instala%C3%A7%C3%A3o-nodejs-via-nvm)
+  - [Instalação Yarn (Gerenciador de Pacotes)](#instala%C3%A7%C3%A3o-yarn-gerenciador-de-pacotes)
+- [Ferramentas Utilizadas na Aplicação](#ferramentas-utilizadas-na-aplica%C3%A7%C3%A3o)
+  - [Express.js](#expressjs)
+  - [Mongoose](#mongoose)
+  - [Insomnia](#insomnia)
+  - [Multer](#multer)
+    - [Funcionamento](#funcionamento)
+  - [Sharp](#sharp)
+  - [Cors](#cors)
+  - [Socket.io](#socketio)
+    - [Disponibilizando o acesso globalmente](#disponibilizando-o-acesso-globalmente)
+
 # Ambiente de Desenvolvimento
+
+## Dependências
+
+```javascript
+"dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.14",
+    "multer": "^1.4.1",
+    "sharp": "^0.22.1",
+    "socket.io": "^2.2.0"
+  },
+```
 
 Os recursos utilizados no ambiente de desenvolvimento envolvem o Node.js (servidor) e o gerenciador de pacotes Yarn, alternativa ao npm que oferece algumas vantagens, como armazenamento em cache de registros dos pacotes instalados, permitindo por exemplo que a instalação dos pacotes em máquinas terceiras aconteçam na mesma ordem que o projeto original.
 
