@@ -1,8 +1,8 @@
-# Semana OminiStack
+# Semana OmniStack
 
-Repositório referente a utilização da stack MERN (MongoDB, Express, React, Node) feita durante a semana OminiStack promovida pela Rocketseat, o projeto envolve a criação de uma aplicação réplica ao Instagram, onde foram utilizados todos os elementos da stack, inclusive ainda ReactNative para criação da versão mobile da aplicação, visto que o consumo da API REST feita com Express.js em ambiente Node.js, é compartilhada entre a aplicação web e mobile.
+Repositório referente a utilização da stack MERN (MongoDB, Express, React, Node) feita durante a semana OmniStack promovida pela Rocketseat, o projeto envolve a criação de uma aplicação réplica ao Instagram, onde foram utilizados todos os elementos da stack, inclusive ainda ReactNative para criação da versão mobile da aplicação, visto que o consumo da API REST feita com Express.js em ambiente Node.js, é compartilhada entre a aplicação web e mobile.
 
-- [Semana OminiStack](#semana-oministack)
+- [Semana OmniStack](#semana-oministack)
 - [Implementação do Back-end](#implementa%C3%A7%C3%A3o-do-back-end)
   - [Dependências](#depend%C3%AAncias)
     - [Instalação Node.js via nvm](#instala%C3%A7%C3%A3o-nodejs-via-nvm)
