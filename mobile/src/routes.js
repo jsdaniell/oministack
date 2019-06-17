@@ -1,5 +1,5 @@
 import React from 'react';
-import { createAppContainer, createStackNavigation, createStackNavigator } from 'react-navigation';
+import { createAppContainer, createStackNavigator } from 'react-navigation';
 import { Image } from 'react-native';
 
 import Feed from './pages/Feed'

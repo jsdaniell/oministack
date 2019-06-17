@@ -8,27 +8,27 @@ import camera from '../assets/camera.png'
 
 export default class Feed extends Component {
 
-static navigationOptions = ({ navigation }) => ({
-    headerRight: (
-        <TouchableOpacity style={{ marginRight: 20 }} onPress={() => navigation.navigate('New')}>
-            <Image source={camera}/>
-        </TouchableOpacity>
-    ),
-})
+    static navigationOptions = ({ navigation }) => ({
+        headerRight: (
+            <TouchableOpacity style={{ marginRight: 20 }} onPress={() => navigation.navigate('New')}>
+                <Image source={camera}/>
+            </TouchableOpacity>
+        ),
+    })
 
-state = {
-    feed: [],
-}
+    state = {
+        feed: [],
+    }
 
-async componentDidMount() {
-    // this.registerToSocket();
+    async componentDidMount() {
+        // this.registerToSocket();
 
-    const response = await api.get('posts');
+        const response = await api.get('posts');
 
-    console.log(response.data)
+        console.log(response.data)
 
-    this.setState({ feed: response.data });
-}
+        this.setState({ feed: response.data });
+    }
 
     render(){
         return <View>
